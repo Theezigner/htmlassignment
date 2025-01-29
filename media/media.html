@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <p class="menu"><a href="/htmlsubmit/index.html">Main Menu</a></p>
+            <p class="headerlinks"><a href="/index/index.html">Introduction</a></p>
+            <p class="headerlinks"><a href="/form/form.html">Application Form</a></p>
+            <p class="headerlinks"><a href="/table/table.html">Table</a></p>
+            <p class="headerlinks"><a href="/media/media.html">Media</a></p>
+        </nav>
+        
+        <nav>
+            <ul>
+                <li><a href="#Audio">Audio</a></li>
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Iframe">Iframe</a></li>
+                <li><a href="#Embed">Embed</a></li>
+                <li><a href="#Source">Source</a></li>
+                <li><a href="#Track">Track</a></li>
+                <li><a href="#Picture">Picture</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Audio">
+            <h1>Audio Element</h1>
+            <audio class="element" controls src="/assets/audio/Introduction.mp3"></audio>
+        </section>
+        <section id="Video">
+            <h1>Video Element</h1>
+            <video class="element"  controls src="/assets/video/Unlocking HTML_ My Alt School Journey!-VEED (1).mp4"></video>
+        </section>
+        <!--Iframe to put youtube link/video in code-->
+        <section id="Iframe">
+            <h1>Iframe Element</h1>
+            <iframe class="element"src="https://www.youtube.com/embed/7QA-86k0cEQ?si=td_136JbOQrYtWYY"
+            title="Altschool Africa Iframe Assignment"
+            height="660px"></iframe>
+        </section>
+        <!--Embed; An old way of adding external resources-->
+        <section id="Embed">
+            <h1>Embed Element</h1>
+            <embed class="element" src="https://share.synthesia.io/4944f040-1190-4157-a06b-b0975c380c49" width="30vw" height="600px" >
+        </section>
+        <!--Source; A long way of adding videos and audio-->
+        <section id="Source">
+            <h1>Source Element</h1>
+            <video class="element" controls>
+                <source src="/assets/video/Unlocking HTML_ My Alt School Journey!-VEED (1).mp4">
+            </video>
+        </section>
+        <!--Track; For Subtitles: Happyscribe to convert srt to vtt-->
+        <section id="Track">
+            <h1>Track Element</h1>
+            <video class="element" controls>
+                <source src="/assets/video/Unlocking HTML_ My Alt School Journey!-VEED (1).mp4">
+                <track src="/assets//captions/Unlocking HTML_ My Alt School Journey!-VEED (1).mp4 (1).vtt" default kind="captions" srclang="en" label="English">
+            </video>
+        </section>
+        <section id="Picture">
+            <h1>Picture Element</h1>
+            <picture class="picture">
+                <source srcset="/assets/images/mobile.jpeg" media="(max-width: 600px)" /> 
+                <source srcset="/assets/images/tablet.jpeg" media="(max-width: 900px)"/>
+                <source srcset="/assets/images/laptop.jpeg" media="(max-width: 1200px)"/>
+                <img src="/assets/images/original.jpeg"  alt="Your Browser cannot Open my Image...NOT MY FAULT"/>
+            </picture>
+        </section>
+        
+    </main>
+</body>
+</html>

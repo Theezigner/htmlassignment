@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1B</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <header>
+      <nav>
+            <p class="menu"><a href="/htmlsubmit/index.html">Main Menu</a></p>
+            <p class="headerlinks"><a href="/index/index.html">Introduction</a></p>
+            <p class="headerlinks"><a href="/form/form.html">Application Form</a></p>
+            <p class="headerlinks"><a href="/table/table.html">Table</a></p>
+            <p class="headerlinks"><a href="/media/media.html">Media</a></p>
+      </nav>
+    </header>
+    <main>
+      <section class="left">
+        <img src="/assets/images/bannerImage.png"/>
+        <h1>Learn highly sought after skills without hassle.</h1>
+        <p>2025 © AltSchool Africa. All rights reserved.</p>
+      </section>
+      <form action="" method="POST">
+        <section class="before-form">
+          <div class="legend-a">
+            Already an AltScholar? <a href="#">Sign In!</a>
+          </div>
+          <legend>
+            <h1>Signup</h1>
+            <p>Take the next steps to apply to Altschool</p>
+          </legend>
+        </section>
+          
+        <section class="form-control">
+          <section class="flex1">
+              <div>
+                <label>
+                  <h3>First Name</h3>
+                  <input type="text" placeholder="First Name"/>
+                </label>
+              </div>
+              <div>
+                <label>
+                  <h3>Last Name</h3>
+                  <input type="text" placeholder="Last Name"/>
+                </label>
+              </div>
+          </section>
+          <section class="flex2">
+              <div>
+                <label><h3>Email Address:</h3>
+                  <input type="email" placeholder="Email" required />
+                </label>
+              </div>
+              <div>
+                <label
+                  ><h3>Gender</h3>
+                  <select>
+                    <option value="">Select Gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                  </select>
+                </label>
+              </div>
+          </section>
+          <section class="flex3">
+                <div>
+                  <div>
+                    <label>
+                      <h3>Date of Birth</h3>
+                      <input type="date" />
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label><h3>Phone Number:</h3>
+                      <input type="tel" placeholder="Phone Number" pattern="[2-4][4][0-9][3][0-9][4]" required autocomplete="cc-number"/>
+                      </label>
+                </div>
+          </section>
+          <section class="flex4">
+                <div>
+                      <label><h3>Country of Residence:</h3>
+                          <input type="text" placeholder="Country of Residence"/>
+                      </label>
+                </div>
+                <div>
+                  </label> 
+                  <label><h3>State of Residence:</h3>
+                  <input type="text" placeholder="State of residence" autocomplete="address-level1"/>
+                  </label>
+                </div>
+          </section>
+          <section class="flex5">
+              <div>
+                <label>
+                    <h3>Password</h3>
+                    <input type="password" placeholder="Password"/>
+                  </label>
+            </div>
+                <div>
+                    <label>
+                        <h3>Confirm Password</h3>
+                        <input type="password" placeholder="Confirm Password" />
+                      </label>
+                </div>
+          </section>
+          <section>
+                <div>
+                  <label><h3>How did you hear About us:</h3>
+                      <input class="single" type="text" placeholder="Optional: Let us know how you found us">
+                  </label> 
+                </div>
+          </section>
+        </section>
+        <section class="footer">
+          <p>By clicking submit, I agree to <strong>Terms of Use</strong> and acknowledge that I
+              have read the <strong>Privacy Policy</strong>.</p>
+              <button type="submit" value="Submit" class="submit">Submit</button> 
+        </section>
+      </form>
+    </main>
+
+</body>
+</html>

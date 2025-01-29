@@ -1,0 +1,184 @@
+body {
+    font: 1em sans-serif;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    padding: 0px;
+  
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu {
+    margin-left: 20px;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .headerlinks a:hover {
+    background-color: white;
+    color: #000;
+    padding: 20px;
+  }
+  h1,h2,h3 {
+    color: black;
+}
+
+main {
+    display: flex;
+}
+.left {
+    background-color: rgb(248, 250, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    padding: 90px;
+    padding-top: 100px;
+}
+
+.left img {
+    width: 30vw;
+}
+
+.left h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+.left p {
+    font-weight: bold;
+}
+
+.before-form .legend-a {
+    color: #000;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: right;
+}
+
+.before-form h1 {
+    font-size: 2.2rem;
+}
+
+.before-form a {
+    text-decoration: none;
+    color:  rgb(84, 84, 243);
+}
+
+.before-form p {
+    color: grey;
+}
+
+form {
+    padding-left: 30px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+input,select {
+    width: 320px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid rgb(228, 225, 225);  
+}
+select {
+    font-weight: bold;
+    color: gray;
+    width: 340px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-weight: bold;
+  }
+
+.flex1,.flex2,.flex3,.flex4,.flex5 {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    gap: 30px;
+}
+
+.single {
+    width: 695px;
+}
+
+.footer {
+    padding-top: 10px;
+    width: 705px;
+}
+
+.footer strong {
+    color:  rgb(84, 84, 243);
+}
+
+.submit {
+    background-color: rgb(84, 84, 243);
+    color: white;
+    font-size: 1rem;
+    width: 715px;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 20px;
+    border-style: none;
+}
+
+@media (max-width: 990px) {
+    .left {
+        display: none;
+    }
+
+    .before-form .legend-a {
+        text-align: center;
+    }
+
+    form {
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 770px) {
+    form {
+        padding-left: 30px;
+    }
+    .flex1,.flex2,.flex3,.flex4,.flex5 {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        }
+    input, select, .single {
+        width: 85vw;
+        height: 20px;
+        padding: 10px; 
+    }
+
+    .footer, .submit {
+        width: 88vw;
+    }
+
+    select {
+        font-weight: bold;
+        color: gray;
+        width: 88vw;
+        height: 45px;
+        border-radius: 5px;
+    }
+}
+    
+    

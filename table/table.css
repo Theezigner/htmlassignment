@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: black;
+  padding: 0px;
+
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+.menu {
+  margin-left: 20px;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.headerlinks a:hover {
+  background-color: white;
+  color: #000;
+  padding: 20px;
+}
+
+caption strong {
+    font-size: 2rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table,
+  th,
+  td {
+    font-size: 1.2rem;
+    border: 1px solid black;
+  }
+  td strong {
+    font-size: 1.2rem;
+  }
+  td {
+    font-size: 1rem;
+  }
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+}
