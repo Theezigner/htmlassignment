@@ -1,0 +1,162 @@
+/*Element Selector*/
+h1 {
+    color: blue;
+   
+}
+
+/*id selector*/
+#footer {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*class selector*/
+.header {
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: underline;
+    max-width: 2000px;
+}
+
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+    max-width: 2000px;
+}
+
+header {
+    max-width: 2000px;
+    margin: 0;
+    max-width: 2000px;
+    border-bottom: 2px solid gray; 
+    border-top: 0;
+
+}
+
+nav a {
+    margin: 0px 10px;
+}
+
+.nav, .main, .footer {
+    max-width: 2000px;
+    margin: 0px auto;
+}
+/*GRID*/
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 15px;
+    /*grid-auto-rows: 200px;*/
+}
+
+
+.gridrow {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 15px;
+    background-color: whitesmoke; 
+    border-radius: 10px; 
+    padding: 20px;
+    border: 1px solid gray; 
+}
+
+.gridfr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: wheat; 
+    border-radius: 10px; 
+    padding: 20px;
+    border: 1px solid blueviolet; 
+} 
+
+.gridflex {
+    display: grid;
+    grid-template-columns: 600px 1fr 1fr;
+    background-color: wheat; 
+    border-radius: 10px; 
+    padding: 20px;
+    border: 1px solid gray; 
+} 
+
+.gridrepeat {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: wheat; 
+    border-radius: 10px; 
+    padding: 20px;
+    border: 1px solid gray; 
+} 
+
+.gridrepeatstyle {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 20px;
+    background-color: wheat; 
+    border-radius: 10px; 
+    padding: 20px;
+    border: 1px solid gray; 
+} 
+
+/*FLEXBOX*/
+.flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-item {
+    flex: 1;
+}
+.flex-item:first-child {
+    order: 2;
+}
+
+/*GRID + FLEX*/
+.gridcell, .flex-item {
+    height: 100px;
+    background-color: wheat; 
+    border-radius: 10px; 
+    padding: 20px;
+    border: 1px solid gray; 
+}
+
+/*STYLING ON MOBILE PHONE*/
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+/*TESTING*/
+.ekele {
+    color: brown;
+}
+/*ANIMATE*/
+.animate {
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+/*KEYFRAME*/
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.opacitytest {
+    opacity: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    cursor: pointer;
+
+}
